@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dash.NewsFragment">
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/news1title"
+                android:text="Microsoft to reward hackers for finding bugs in open source election software"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/news1string"
+                android:text="Fair elections are the lifelines of democracy, but in recent years election hacking has become a hot topic worldwide."
+                android:textSize="23sp"
+                android:textStyle="italic"
+                android:layout_below="@id/news1title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_below="@id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/news2title"
+                android:text="Chrome for Android Enables Site Isolation Security Feature for All Sites with Login"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/news2string"
+                android:text="After enabling 'Site Isolation' security feature in Chrome for desktops last year, Google has now finally introduced 'the extra line of defence' for Android smartphone users surfing the Internet over the Chrome web browser."
+                android:textSize="23sp"
+                android:textStyle="italic"
+                android:layout_below="@id/news2title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_below="@id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/news3title"
+                android:text="Feds Shut Down Largest Dark Web Child Abuse Site; South Korean Admin Arrested"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/news3string"
+                android:text="The United States Department of Justice said today that they had arrested hundreds of criminals in a global crackdown after taking down the largest known child porn site on the dark web and tracing payments made in bitcoins."
+                android:textSize="23sp"
+                android:textStyle="italic"
+                android:layout_below="@id/news3title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
